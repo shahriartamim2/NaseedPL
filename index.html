@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Music Player</title>
+   <link rel="stylesheet" href="style.css">
+
+<body>
+   <div class="container">
+      <div class="music-player">
+         <div class="nav">
+            <div class="circle">
+               <img src="assets/back.svg" alt="">
+            </div>
+            <div class="circle">
+               <img src="assets/library.svg" alt="">
+            </div>
+         </div>
+         <div><img src="assets/Screenshot 2024-01-24 221041.png" class="song-image"></div>
+         <h1>Song Name</h1>
+         <p>Artist name</p>
+         <div class="audio">
+            <audio id="song">
+               <source src="assets/Wedding Nasheed  Muhammad Al Muqit (English Lyrics).mp3" type="audio/mpeg" </audio>
+         </div>
+         <input type="range" value="0" class="slider" id="progress">
+         <div class="controls">
+            <div>
+               <img src="assets/backward.svg" alt="">
+            </div>
+            <div>
+               <img onclick="playPause()" src="assets/play.svg" alt="" id="ctrlIcon">
+            </div>
+            <div>
+               <img src="assets/forward.svg" alt="">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

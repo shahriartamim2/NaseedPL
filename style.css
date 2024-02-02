@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/Screenshot\ 2024-01-24\ 221041.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.music-player {
+  width: 400px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(255, 255, 255, 0.68);
+
+  padding: 25px 35px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Freehand", cursive;
+  border-radius: 30px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  color: pink;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 10px #00bfdc;
+}
+.song-image {
+  border: 5px solid white;
+  border-radius: 150px;
+  height: 150px;
+  width: 150px;
+}
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+  color: #00b7ff;
+}
+p {
+  font-size: 25px;
+  color: #009dff;
+}
+#progress {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #ffffff;
+  opacity: 0.8;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 60px 0;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #00bfdc;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid rgb(255, 255, 255);
+  box-shadow: 0 5px 5px #00bfdc;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+.controls div {
+  scale: 1.5;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  box-shadow: 0 5px 5px #00bfdc;
+  cursor: pointer;
+}
+.controls div:nth-child(2) {
+  scale: 2;
+  background-color: #ffffff;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  box-shadow: 0 5px 5px #3adcf5;
+}
